@@ -1,0 +1,19 @@
+.loginpagebody{
+  background-image: url('../../assets/images/body_image.jpg');
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 1800px;
+  display: flex;
+  overflow: hidden important;
+}
+.login_div
+{
+ margin-top: 0rem; 
+
+}
+.signup_div
+{
+ margin-top: 1rem; 
+
+}
