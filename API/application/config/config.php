@@ -1,5 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+date_default_timezone_set('Asia/Kolkata');
 
 /*
 |--------------------------------------------------------------------------
@@ -23,7 +24,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '';
+$config['base_url'] = 'http://localhost/rightbrain/API/';
+$config['appName'] = 'RightBrain';
+// $config['imagesPATH'] = $_SERVER['DOCUMENT_ROOT'].'/interedu/images/';
 
 /*
 |--------------------------------------------------------------------------
@@ -136,7 +139,7 @@ $config['subclass_prefix'] = 'MY_';
 | Note: This will NOT disable or override the CodeIgniter-specific
 |	autoloading (application/config/autoload.php)
 */
-$config['composer_autoload'] = FALSE;
+$config['composer_autoload'] = TRUE;
 
 /*
 |--------------------------------------------------------------------------
@@ -324,7 +327,7 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'KFjfdJFNBBKIRMICdkf45';
 
 /*
 |--------------------------------------------------------------------------
@@ -382,7 +385,7 @@ $config['sess_cookie_name'] = 'ci_session';
 $config['sess_expiration'] = 7200;
 $config['sess_save_path'] = NULL;
 $config['sess_match_ip'] = FALSE;
-$config['sess_time_to_update'] = 300;
+$config['sess_time_to_update'] = 0;
 $config['sess_regenerate_destroy'] = FALSE;
 
 /*
@@ -521,3 +524,24 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
+
+$config['mailtype'] = 'html';
+$config['developerEmail'] = "kiran.malave@gmail.com";
+$config['supportEmail'] = "support@crm.com";
+$config['webmasterEmail'] = "webmaster@crm.com";
+
+$config['pagination']["per_page"] = 2;
+$config['pagination']['next_link'] = 'Next';
+$config['pagination']['prev_link'] = 'Previous';
+$config['pagination']['cur_tag_open'] = '<li class="disabled"><a href="#">';
+$config['pagination']['cur_tag_close'] = '</a></li>';
+$config['pagination']['num_tag_open'] = '<li>';
+$config['pagination']['num_tag_close'] = '</li>';
+$config['pagination']['next_tag_open'] = '<li>';
+$config['pagination']['next_tag_close'] = '</li>';
+$config['pagination']['prev_tag_open'] = '<li>';
+$config['pagination']['prev_tag_close'] = '</li>';
+$config['pagination']['first_tag_open'] = '<li>';
+$config['pagination']['first_tag_close'] = '</li>';
+$config['pagination']['last_tag_open'] = '<li>';
+$config['pagination']['last_tag_close'] = '</li>';

@@ -42,5 +42,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://13.127.252.97/rightbrain1-api/"
+  "proxy": "http://13.127.252.97/rightbrain/api/"
 }

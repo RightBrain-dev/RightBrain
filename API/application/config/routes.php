@@ -50,5 +50,35 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'welcome';
-$route['404_override'] = '';
+
+$route['login'] = 'Login/verifyUser';
+$route['salt'] = 'Login/getsalt';
+$route['logout'] = 'Login/logout';
+$route['forgotPassword'] = 'Login/resetPassword';
+
+
+$route['dashboardDetails'] = 'Dashboard/getDashboardCount';
+$route['alerts'] = 'Dashboard/alerts';
+
+$route['schoolMasterList'] = 'Masters/getSchoolDetails';
+$route['schoolMaster'] = 'Masters/school';
+$route['schoolMaster/(:num)'] = 'Masters/school/$1';
+$route['schoolMaster/status'] = 'Masters/schoolChangeStatus';
+
+$route['changeSchoolPic/(:num)'] = "Masters/SetSchoolPic/$1";
+$route['delSchoolPic/(:num)'] = "Masters/delSchoolPic/$1";
+$route['countryList'] = "Masters/countryList";
+
+$route['admins'] = 'SearchAdmin/index';
+$route['admins/status'] = 'SearchAdmin/changeStatus';
+$route['addadmin/(:num)'] = 'SearchAdmin/getAdminDetails/$1';
+$route['addadmin'] = 'SearchAdmin/getAdminDetails';
+$route['users'] = 'Users/index';
+$route['adduser1'] = 'User1/index';
+
+
+##### Import Exployee Details End #####
+
 $route['translate_uri_dashes'] = FALSE;
+$route['404_override'] = '';
+
